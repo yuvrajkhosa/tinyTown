@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TinyTown Zombies</title>
+  <div class="header">
+    <h1 id="title" class="text">&#8205;</h1>
+  </div>
+</head>
+<link rel="stylesheet" href="style.css">
+
+
+
+<body>
+  <script src="p5.min.js"></script>
+  <script src="ball.js"></script>
+  <script src="index.js"></script>
+
+<div id="popup">
+
+
+<div id="blur" class="blur">
+
+</div>
+  <div class="popup">
+    <h3 onclick="removePopup()"> X </h3>
+    <p>WARNING! This report is for medically trained personnel only</p>
+  </div>
+</div>
+  <div class="textDiv" style="top: 18%">
+    <h2 class="text">Introduction</h2>
+    <p class="text">I am a Scientist studying the horrific events that took place at Tiny Town BC just 3 months ago.
+      An unknown epidemic broke out overnight, in which a large population of the residents were affected.
+      From our research, we can conclude that this was a mutation that had been dispersed throughout Tiny Town.
+      Those affected had turned into "zombies" overnight. These "zombies" abruptly started craving the taste for the human brain,
+      and started acting irrationally and illogically over human brain! I feel as if I have conducted my research and come to some important and dire conclusions.
+    </p>
+  </div>
+
+  <div class="textDiv" style="top: 59%; width: 45%; left: 74%">
+    <h2 class="text">What is a mutation?</h2>
+    <p class="text">We all know we have special instructions in our cells called <i>DNA</i> (Deoxyribonucleic acid).
+      This DNA gives our cells instructions on how to function and how to make copies of themselves.
+      This is called mitosis. Sometimes, while undergoing mitosis, a cell makes a mistake in copying.
+      This mistake is called a <i>mutation</i>. If your DNA makes a mistake that prohibits a cell to stop dividing, that is called cancer.
+      Cancer happens when a mutation in your DNA causes cells to divide indefinitely.
+      This is called a negative mutation. A negative mutation affects the survival of an organism in a bad way.
+      There are also <i>positive mutations</i>, like lactose tolerance. A long time ago, we were not able to consume lactose.
+      A mutation occurred that allowed us to digest lactose properly. This mutation was positive and was "selected".
+      Since we had another healthy food source, we were able to reproduce more. The lactose tolerance gene was passed on to future generations.
+      Although there still a lot of people that are lactose intolerant, which means that they still have the original gene that can't digest lactose properly,
+      a good portion of the world can digest lactose. There are also <i>neutral mutations</i> that do not affect the survival of an organism.
+      An example of a neutral mutation is an attached ear lobe instead of a free ear lobe. Mutations are necessary for evolution. They provide variance in a population.
+      If an organism randomly gets a good mutation, then that organism will be more “fit” and reproduce more.
+      Now this mutation will be passed on to future generations and introduced into the gene pool.</p>
+  </div>
+  <img src="images\mutation.png" style="top: 80%; left: 15%; width: 30%">
+  <div class="textDiv" style="top: 150%">
+    <h2 class="text">Where did this mutation occur?</h2>
+    <p class="text">Your body cells are called somatic cells, so your skin cells, your intestinal cells, etc.
+      These cell's DNA is not passed on to offspring. So if a mutation ever occurs in these cells it will not be passed onto offspring.
+      Your somatic cell DNA is not inherited by your kids. The DNA that your offspring inherits is found in your germinal cells.
+      Germinal cells are the cells that turn into gametes... sperm and eggs. These are called haploid cells because they only possess half of your DNA.
+      The other half is given by the other gamete. When germinal cells divide to create gametes, they undergo a similar process to mitosis called meiosis.
+      In meiosis, instead of two copies, there are four copies made. However, these are not identical copies. The copies are different because the cells went through "crossing over" while dividing.
+      Meaning they randomized their DNA sequence. If a mutation occurs when the DNA is duplicated for meiosis, then we got a problem, a blessing, or a harmless abnormality.
+      The mutation has a chance to be passed onto offspring if the gamete meets the opposite gamete and becomes a zygote.
+      The mutation could be a positive mutation, a negative mutation, or a neutral one. </p>
+  </div>
+
+  <div class="textDiv" style="top: 220%; width: 45%; left: 25%;">
+    <h2 class="text">What type of mutation was it? Why wasn't it noticed beforehand?</h2>
+    <p class="text">You might think this was a negative mutation since it turned them into zombies, but not so fast!
+      This mutation did not affect the people who had this mutation's lives.
+      We think this mutation was introduced into the population over 350 years ago! So it had no effect on the generations before either.
+      Therefore, this was a neutral mutation until it went "active". Then it was a negative one. No one noticed this mutation for 350 years because no one was looking for it.
+      It had no symptoms at all until now. Our most probable theory of why this gene went active is due to the 2° - 3° increase in the average temperature in the area.</p>
+  </div>
+  <img src="images\somatic.png" style="top: 228%; left: 58%">
+  <div class="textDiv" style="top: 265%; left: 70%; width: 50%">
+    <h2 class="text">How did it spread?</h2>
+    <p class="text">We strongly believe that this mutation had been introduced into the town over 350 years ago by one individual!
+      So how did this mutation live over 350 years and become so prevalent in Tiny Town? When the gene pool of a population changes,
+      we call that genetic drift. In this case, the type of genetic drift that occurred is called the Founder's Effect.
+      The Founder's effect is a change in allele frequencies because of the migration of a small subgroup of a population.
+      In this case, the small subgroup was a single individual over 350 years ago. He was either born with the mutation, or already had it and came to Tiny Town and spread it.
+      This person spread the mutation, over generations, to a large population of Tiny Town. The mutation wasn't selected out of the population, which means the mutation died with the carrier because it harmed the carrier,
+      because it did not affect the carrier. This individual had offspring who all, or some, inherited the mutation.
+      These new mutation carriers had offspring that had more offspring with this mutation. This recursive cycle carried out until there were many carriers throughout Tiny Town.
+      Below is a simulation of how one mutation carrier can pass their mutation onto many people over generations. Here are the rules to the simulation. The carrying capacity for this simulation
+      is 200 individuals, so 200 max. There is a starting population of eleven. One carrier of the zombie gene (coloured red), and ten who do not posses it (coloured cyan).
+      Everytime two individuals meet one another, there is a chance off a child being born. If atleast one of the parents have the mutation, then the child will also have the
+      mutation. Each individual can have one child. After sometime, individuals will start
+      dying from old age. You can see how statisticaly, the mutated individual will be able to change the allele frequency of the zombie gene in the population single handedly. Observe
+      for as long as you like. Theoretically when the carrying capacity is met and population size stabalizes, every single individual should have the mutated gene in the end. When everyone has the mutaion
+      then it just becomes a normal trait since everyone has it. It's not really a change anymore, but an evolved trait.
+    </p>
+
+    <button id="loopButton" onclick="buttonClicked();">Start</button>
+  </div>
+  <p class="text" style="position: absolute; top: 290%; left: 8%;">Mutation spreads throughout generations</p>
+  <img src="images\fly.png" style="top: 300%; left: 2%; width: 40%" alt="">
+
+  <div class="textDiv" style="top: 470%; width: 80%">
+    <h2 class="text">Has <i>Speciation</i> occured?</h2>
+    <p class="text">What is speciation? Let's first understand what a species is. A species is a group of living organisms that are capable of interbreeding.
+      So humans are a species because we are all capable of breeding with each other, males and females of course! Speciation is the formation of a new species.
+      New species form due to two reasons. Reproductive isolation, and changes in the gene pool while reproducing isolated. Let's take Darwin's finches as an example of speciation.
+      There were originally only one species of finches. They flew to this new island, where they were separated at different parts of the island.
+      These finches in different areas adapted to their environments. Some evolved beaks made for crushing insects, while others evolved beaks made for eating berries.
+      Over thousands of years of these finches reproducing with finches in their own area, evolved genetic differences vastly different from the other finches on other parts of the island.
+      Eventually, their genetic differences grew so great that finches from each part of the islands began their species.
+      They could only breed with finches on their parts of the island because they were breeding with each other in isolation for so long. They might not recognize the finches from other
+      parts of the island. Now they will only breed with finches from their part of the island. This is called isolated reproduction. Now for our zombie example,
+      did speciation occurred as soon as the zombie gene was introduced into the population? Of course not, because that one individual was able to breed with other humans even with the gene.
+      That's how the mutation spread, the original carrier had to reproduce. So no,  speciation did not occur when the mutation was initially introduced into the population.
+      Speciation didn't occur over the 350 years the gene was silent either because Tiny Town was interbreeding just fine. Now comes a present time, when the gene went active.
+      Those with the active zombie gene craved the taste of brain and started acting illogically over brain. No human would mate with a zombie anymore would they?
+      This is going to become an example of reproductive isolation. In the finches example, we had geographical isolation.
+      Since the finches could not physically get to other parts of the island where there were other finches. When they finally did, they were too different.
+      In this case, we have behavioral isolation.
+      Where organisms refuse to mate with each other due to different courtship behavior, or mating rituals. Eating brains,
+      and acting like zombies is very different behaviour from normal human behaviour. No human would choose to mate with these zombies.
+      Over time of these zombies having to reproduce with other zombies, since that's all they got,
+      these zombies will become geneticaly different to humans till the point of zombies and humans not being able to mate anymore because we are too different genetically.
+      This is where speciation will occur, and we will have a zombie species. So we can conclude that speciation occured, after the zombie gene went active.</p>
+  </div>
+<img src="images\speciation.png" style="top: 580%; left: 60%; width: 30%"alt="">
+  <div class="textDiv" style="top: 562%; left: 30%; width: 50%">
+    <h2 class="text">Has there been evolution?</h2>
+    <p class="text">What is evolution? Evolution is the changing of allele frequencies over time.
+      We started with a town with no zombie gene in any of its inhabitants.
+      Then, one individual either came to the town already possessing this zombie mutation or was born with this mutation.
+      The allele frequency of the zombie allele is only present in one individual. If that individual dies with that gene with no offspring who inherited it,
+      that mutation is gone forever and there was no evolution. However, that individual did pass on that mutation. The mutation was passed down generation after generation.
+      The zombie allele frequency grew, and it grew fast. We can take our simulation as scientific proof. I think being a scientist is proof enough... and I'm a scientist.
+      After a good subset of people starts carrying this mutation, the mutation starts to spread rapidly. The allele frequency was increasing drastically.
+      So, yes, there was evolution. Even in this Tiny Town. It wasn't a very drastic evolution, however, there was a change in allele frequency. Now that I think of it,
+      maybe this was some drastic evolution. These mutated individuals became zombies! They are going to become new species if they aren't cured! Evolution is a beautiful thing but mistakes do happen,
+      and this mistake can be a very dangerous one. </p>
+  </div>
+
+  <div class="textDiv" style="top: 640%; width: 90%">
+    <h2 class="text">The Future</h2>
+    <p class="text">Well, where does this leave us? There mutation in someone's germinal cell more than 350 years ago. This, originally neutral, mutation was unnoticed for three and a half centuries.
+      Founder's Effect led this mutation to change the gene pool of Tiny Town so it has this zombie allele in great quantities. Speciation occurred after the gene went active. Finally, a change in
+        zombie allele frequency in this population meant that evolution had occurred. These people are still contained in highly protected, and isolated celled prisons. We are relying on pork and beef brains to keep these zombies alive. The mutation is in every somatic cell in their body, there isn't much hope for them. The best we can do is use CRISPR to modify their germinal cells so that any of their offspring will not have this zombie allele. Even that doesn't seem worth it anymore. As for the zombies themselves, they are going to have to die. It's the sad truth,
+        but having an intelligent new species that we don't fully understand and wants to eat our brains is a threat to our existence. If we don't kill these zombies now, they might kill us.
+        We don't know what else this mutation did, all we see is a small part. Brain scans and blood samples will lead us to more knowledge of what neutral mutations can be in disguise. It was unfortunate what happened to Tiny Town, only if we had found out about this mutation earlier. The town is so small and remote, no tests were ever conducted here. The zombie epidemic could easily turn into a pandemic. Althought they act illogically, they only act illogically when they crave brains. Other than that they seem like normal intelligent primates, but we don't exactly
+        know if thats true. Maybe there intelligence is growing from the excess brain proteins. We just don't know yet. They will eventually realize that humans will no longer mate with them anymore. If we don't kill them now, they will start hunting us for our brains. Our tests show they prefer human brain over beef or pig brain. They could
+		    start breeding and farming humans for food, and breed with other zombies. This is such new terriory. Humans are the most deadly animals on this planet, now there are mutated humans
+		    craving our brains striving to kill us. Letting them into society could risk the extintion of the human species. The minister of defense and the minister of health BC has given us the green light to annihilate
+        the threat. Steps are being taken globally to make sure there are no more zombie alleles hidden away in the public. What will happen to those who have the mutation but not activated? Well,
+        we don't quite know yet. The number of how many of these sleeping zombies there are will determine what will be done. The world can easily turn into a comic book dystopia if we don't act rationally.
+        You might say killing innocent humans with the dormant version of this mutation is immoral. We should rely on moral values when we have an option. There will be no moral values if there are no humans to have them. In the event that we don't make it,
+        this paper is proof of the warning I gave to the medical world. That would be very unlikely, but nature selects those who are most fit. Perhaps it's time for humans to step back and make way for a new civilization.
+
+    </p>
+  </div>
+
+</body>
+
+</html>
